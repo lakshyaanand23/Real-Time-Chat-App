@@ -43,7 +43,8 @@ io.on("connection", (socket) => {
   socket.on("disconnect", () => {
     if (userId) delete userSocketMap[userId];
   });
-});
+}); 
+
 
 // Connect to MongoDB
 await connectDB();
